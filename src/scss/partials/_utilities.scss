@@ -1,0 +1,19 @@
+.container-primary {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container-small {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.display-none {
+  display: none!important;
+}
+
+.display-block {
+  // display: block!important;
+  transform: translateX(0)!important;
+
+}

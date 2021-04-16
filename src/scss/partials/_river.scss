@@ -1,0 +1,138 @@
+.main-river {
+  margin-top: -8px;
+  background-color: $lightgrey;
+
+  .container-primary {
+    // background-color: violet;
+    padding: 0 15px;
+  }
+
+  .container-small {
+    // background-color: pink;
+    padding: 0 5px;
+  }
+
+  .title {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 45px;
+
+    h2 {
+    font-size: 48px;
+    }
+
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 180px;
+
+    .text {
+
+      h4 {
+        text-transform: uppercase;
+        line-height: 26px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 24px;
+      }
+    }
+
+    .col-center {
+      flex-basis: 30%;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .col-left,
+    .col-right {
+      flex-basis: 33%;
+
+      .museum,
+      .farm,
+      .gold,
+      .animal {
+        margin-top: 60px;
+        display: flex;
+
+        .text {
+          flex-basis: 80%
+        }
+
+        .token {
+          flex-basis: 20%;
+
+          img {
+            max-width: 100%;
+          }
+        }
+
+      }
+
+      .museum,
+      .gold {
+        border-bottom: 1px solid #cccccc;
+      }
+
+    }
+
+  }
+}
+
+
+
+@media screen and (max-width: 1025px) {
+
+  .main-river .title h2 {
+    font-size: 38px;
+  }
+
+  .main-river .content {
+    flex-wrap: wrap;
+  }
+
+  .main-river .content .col-left, .main-river .content .col-right,
+  .main-river .content .col-left, .main-river .content .col-left,
+  .main-river .content .col-left, .main-river .content .col-center {
+    flex-basis: 80%;
+
+    .text h4{
+      font-size: 20px;
+    }
+
+    .token {
+    text-align: center;
+    }
+  }
+
+  .main-river .content .col-left, .main-river .content .col-right {
+
+    .text {
+      margin-left: 10px;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+  .main-river .title h2 {
+    font-size: 34px;
+  }
+
+  .main-river .content .col-center img {
+    max-width: 80%;
+  }
+}

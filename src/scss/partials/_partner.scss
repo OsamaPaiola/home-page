@@ -1,0 +1,60 @@
+.main-partner{
+
+  .container-small {
+    // padding: 0 15px;
+
+    .partner {
+      margin:80px 0;
+
+      .partner-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        li {
+          margin:25px 0;
+
+          img {
+            max-width: 100%;
+            height: auto;
+            padding:  0 10px;
+
+          }
+
+        }
+      }
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .main-partner{
+    .container-small {
+
+      .partner {
+
+        .partner-list {
+          justify-content: space-around;
+
+          li {
+
+          }
+
+        }
+      }
+
+    }
+  }
+
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+
+}

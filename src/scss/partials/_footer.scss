@@ -1,0 +1,191 @@
+.main-footer {
+  background-color: black;
+  color: white;
+  border-bottom: 1px solid $lightgrey;
+
+  .container-small {
+    padding: 0 10px;
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      font-size: 16px;
+      padding: 100px 0;
+
+      h6 {
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+
+      .contacts {
+        flex-basis: 30%;
+
+        li {
+          margin-bottom: 20px;
+        }
+
+        .social {
+
+          ul {
+            display: flex;
+
+            .google {
+              padding: 10px 10px;
+            }
+
+            i {
+              color: white;
+              border-radius: 50%;
+              border: 1px solid white;
+              padding: 10px 12px;
+              margin-right: 17px;
+
+            }
+
+          }
+        }
+
+      }
+
+      .naviga {
+        flex-basis: 40%;
+
+        .list {
+          display: flex;
+          justify-content: space-between;
+
+          ul {
+
+            li {
+              margin-bottom: 10px;
+
+              .i {
+                position: relative;
+                bottom: 5px;
+                width: 20px;
+                background-color: white;
+                margin-right: 10px;
+                border: 1px solid white;
+                display: inline-flex;
+              }
+
+              a {
+                color: white;
+              }
+            }
+          }
+
+          .left {
+            flex-basis: 45%;
+          }
+
+          .right {
+            flex-basis: 50%;
+          }
+        }
+
+      }
+
+      .instagram {
+        flex-basis: 25%;
+
+        h6 {
+          margin-bottom: 35px;
+        }
+
+        .box-images {
+          display: flex;
+          flex-wrap: wrap;
+
+          .image {
+            width: 90px;
+            height: 90px;
+            margin: 5px auto;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
+.policy {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 12px;
+}
+
+.topscroll {
+
+  #back-top {
+    position: fixed;
+    z-index: 100;
+    bottom: 5.5%;
+    right: 15%;
+    display: none;
+    padding:10px;
+
+    i {
+      background-color: $lightgrey;
+      border-radius: 50%;
+      padding: 18px;
+      color: black;
+      font-size: 25px;
+      border: 1px solid black;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .main-footer {
+
+    .container-small {
+
+      .content {
+
+        .contacts {
+          flex-basis: 90%;
+          margin-bottom: 1rem;
+        }
+        .naviga {
+          flex-basis: 90%;
+          margin-bottom: 2rem;
+        }
+
+        .instagram {
+          flex-basis: 90%;
+
+          .box-images {
+            justify-content: space-between;
+
+            .image {
+              margin: 0;
+              margin-right: 5px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+
+
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+
+}

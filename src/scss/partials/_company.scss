@@ -1,0 +1,221 @@
+.main-company {
+  // height: 810px;
+  background-color: white;
+
+  .container-small {
+    padding: 0 10px;
+
+    .content {
+      display: flex;
+      margin-top: 130px;
+      margin-bottom: 80px;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .image {
+        flex-basis: 47%;
+        // margin: 20px;
+        align-items: center;
+
+        .box-carousel {
+          border: 20px solid $yellow;
+          overflow: hidden;
+          height: 480px;
+
+          img {
+            object-fit: cover;
+            min-height: 480px;
+          }
+
+          li {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 10px;
+            // background-color: yellow;
+
+          }
+          .active {
+            background-color: $yellow;
+          }
+        }
+
+        .btn {
+          display: block;
+
+          .btn-gallery {
+            text-transform: uppercase;
+            padding: 5px 10px;
+            background-color: $yellow;
+            border: 1px solid $yellow;
+            border-radius: 10px;
+            color: white;
+            transition: 0.2s;
+
+            &:hover {
+              opacity: 0.7;
+
+            }
+          }
+        }
+      }
+
+      .text {
+        flex-basis: 47%;
+        // padding: 10px;
+        // margin: 20px;
+
+
+        .label {
+          background-color: $yellow;
+          padding: 2px 14px;
+          font-size: 14px;
+          display: inline-block;
+          // margin-bottom: 15px;
+        }
+
+        h1 {
+          font-size: 48px;
+          margin-top: 18px;
+          margin-bottom: 17px;
+        }
+
+        p {
+          margin-bottom:22px;
+          font-size: 16px;
+          line-height: 25px;
+
+        }
+
+        a {
+          text-decoration: none;
+          color: $yellow;
+          transition: 0.2s;
+
+          &:hover {
+            opacity: 0.7;
+
+          }
+        }
+
+
+      }
+
+    }
+  }
+
+  .modale {
+
+    position: fixed; /* Stay in place */
+    z-index: 101; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    max-height: 100vh;
+    transition: 1s;
+    transform: translateX(-100%);
+    transition: transform 0.5s !important;
+
+
+    .modal-content {
+      display: flex;
+      background-color: $yellow;
+      height: 100%;
+      padding: 15px;
+      width: 100%;
+      overflow: auto;
+      transition: 1s;
+
+      span {
+        cursor: pointer;
+        width: 40px;
+        text-align: center;
+      }
+
+      .slider-for {
+        margin-top: 30px;
+        margin-bottom: 50px;
+      }
+
+      .slider-for img {
+        width: 80%;
+        height: 60vh;
+        margin: 0 auto;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .slider-nav {
+        padding-bottom: 20px;
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .slider-nav img {
+        width: 50%;
+        height: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .slider-nav .slick-prev {
+
+      }
+
+      .slider-nav .slick-next {
+
+      }
+
+
+    }
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+  .main-ospitality .container-small{
+    min-height: 600px;
+  }
+
+  .main-company .container-small .content .image {
+      flex-basis: 90%;
+      margin-bottom: 80px;
+  }
+  .main-company .container-small .content .text {
+    flex-basis: 90%;
+    margin-bottom: 80px;
+  }
+
+  .main-ospitality .container-small .title h1 {
+    font-size: 30px;
+  }
+
+  .main-ospitality img {
+    max-height: 600px;
+  }
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+  .main-company .container-small .content .image .box-carousel {
+    height: 380px;
+  }
+  .slider-for div {
+    margin-bottom: 30px;
+  }
+
+  .slider-nav {
+    display: none;
+  }
+
+}
